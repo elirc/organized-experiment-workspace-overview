@@ -1,0 +1,238 @@
+{
+  "users": [
+    { "id": "user-founder", "name": "Avery Chen", "role": "founder_admin" },
+    { "id": "user-rep", "name": "Jordan Miles", "role": "sales_rep" },
+    { "id": "user-analyst", "name": "Priya Shah", "role": "analyst" }
+  ],
+  "leads": [
+    {
+      "id": "lead-aurora",
+      "fullName": "Maya Patel",
+      "email": "maya@auroralabs.test",
+      "phone": "415-555-0188",
+      "title": "Head of Operations",
+      "source": "Founder Referral",
+      "status": "Qualified",
+      "leadScore": 88,
+      "ownerId": "user-rep",
+      "companyId": null,
+      "notesSummary": "Requested workflow visibility for onboarding and equipment provisioning.",
+      "tags": ["high-fit", "ops"],
+      "createdAt": "2026-03-17T09:00:00.000Z",
+      "updatedAt": "2026-03-29T10:10:00.000Z",
+      "lastContactedAt": "2026-03-29T10:10:00.000Z",
+      "convertedAt": null,
+      "archivedAt": null
+    },
+    {
+      "id": "lead-cedar",
+      "fullName": "Alex Romero",
+      "email": "alex@cedarhealth.test",
+      "phone": null,
+      "title": "IT Manager",
+      "source": "Inbound Demo",
+      "status": "Attempting Contact",
+      "leadScore": 73,
+      "ownerId": "user-rep",
+      "companyId": null,
+      "notesSummary": "Looking for approval routing for software access and purchasing approvals.",
+      "tags": ["healthcare"],
+      "createdAt": "2026-03-21T14:45:00.000Z",
+      "updatedAt": "2026-03-30T15:00:00.000Z",
+      "lastContactedAt": "2026-03-30T15:00:00.000Z",
+      "convertedAt": null,
+      "archivedAt": null
+    },
+    {
+      "id": "lead-harbor",
+      "fullName": "Evan Brooks",
+      "email": "evan@harborlogistics.test",
+      "phone": "206-555-0101",
+      "title": "CFO",
+      "source": "Outbound",
+      "status": "New",
+      "leadScore": 61,
+      "ownerId": "user-founder",
+      "companyId": null,
+      "notesSummary": "Warm intro from investor network.",
+      "tags": ["finance", "enterprise"],
+      "createdAt": "2026-03-31T17:20:00.000Z",
+      "updatedAt": "2026-03-31T17:20:00.000Z",
+      "lastContactedAt": null,
+      "convertedAt": null,
+      "archivedAt": null
+    }
+  ],
+  "companies": [
+    {
+      "id": "company-summit",
+      "name": "Summit Robotics",
+      "website": "summit.example",
+      "industry": "Manufacturing",
+      "employeeCountRange": "201-500",
+      "location": "Austin, TX",
+      "ownerId": "user-founder",
+      "annualRevenueRange": "$10M-$25M",
+      "accountStatus": "Active Opportunity",
+      "tags": ["manufacturing", "expansion"],
+      "description": "Piloting internal request workflows across IT and People Ops.",
+      "createdAt": "2026-02-10T13:00:00.000Z",
+      "updatedAt": "2026-03-28T16:00:00.000Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "contact-summit-sara",
+      "firstName": "Sara",
+      "lastName": "Nguyen",
+      "fullName": "Sara Nguyen",
+      "email": "sara@summit.example",
+      "phone": "512-555-0130",
+      "jobTitle": "VP Operations",
+      "companyId": "company-summit",
+      "ownerId": "user-founder",
+      "tags": ["champion"],
+      "isPrimary": true,
+      "createdAt": "2026-02-10T13:00:00.000Z",
+      "updatedAt": "2026-03-28T16:00:00.000Z"
+    }
+  ],
+  "deals": [
+    {
+      "id": "deal-summit-expansion",
+      "name": "Summit Robotics Expansion",
+      "companyId": "company-summit",
+      "primaryContactId": "contact-summit-sara",
+      "ownerId": "user-founder",
+      "stage": "Proposal",
+      "value": 42000,
+      "probability": 65,
+      "expectedCloseDate": "2026-04-18T00:00:00.000Z",
+      "sourceLeadId": null,
+      "notesSummary": "Proposal sent for cross-functional workflow automation rollout.",
+      "createdAt": "2026-02-18T10:00:00.000Z",
+      "updatedAt": "2026-03-28T16:00:00.000Z",
+      "closedAt": null,
+      "lossReason": null,
+      "watcherIds": ["user-rep", "user-analyst"]
+    },
+    {
+      "id": "deal-ridge-renewal",
+      "name": "Ridge Health Renewal",
+      "companyId": "company-summit",
+      "primaryContactId": null,
+      "ownerId": "user-rep",
+      "stage": "Negotiation",
+      "value": 18500,
+      "probability": 55,
+      "expectedCloseDate": "2026-04-10T00:00:00.000Z",
+      "sourceLeadId": null,
+      "notesSummary": "Procurement asked for security addendum and flexible billing terms.",
+      "createdAt": "2026-03-02T11:00:00.000Z",
+      "updatedAt": "2026-03-29T14:00:00.000Z",
+      "closedAt": null,
+      "lossReason": null,
+      "watcherIds": ["user-founder"]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-followup-maya",
+      "title": "Schedule security review with Maya",
+      "description": "Confirm legal/security timeline before turning qualification into an active opportunity.",
+      "dueDate": "2026-04-02T17:00:00.000Z",
+      "priority": "High",
+      "status": "Open",
+      "ownerId": "user-rep",
+      "linkedEntityType": "lead",
+      "linkedEntityId": "lead-aurora",
+      "createdAt": "2026-03-30T16:30:00.000Z",
+      "completedAt": null
+    },
+    {
+      "id": "task-proposal-review",
+      "title": "Review Summit proposal redlines",
+      "description": "Coordinate with finance before Friday close plan.",
+      "dueDate": "2026-04-01T18:00:00.000Z",
+      "priority": "High",
+      "status": "In Progress",
+      "ownerId": "user-founder",
+      "linkedEntityType": "deal",
+      "linkedEntityId": "deal-summit-expansion",
+      "createdAt": "2026-03-29T11:15:00.000Z",
+      "completedAt": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-lead-aurora-1",
+      "entityType": "lead",
+      "entityId": "lead-aurora",
+      "body": "Strong internal champion. Requested approval chain examples for manager plus finance routing.",
+      "createdBy": "user-rep",
+      "createdAt": "2026-03-29T10:15:00.000Z",
+      "updatedAt": "2026-03-29T10:15:00.000Z"
+    },
+    {
+      "id": "note-deal-summit-1",
+      "entityType": "deal",
+      "entityId": "deal-summit-expansion",
+      "body": "Finance team responded positively after seeing SLA and audit-trail reporting.",
+      "createdBy": "user-founder",
+      "createdAt": "2026-03-28T16:15:00.000Z",
+      "updatedAt": "2026-03-28T16:15:00.000Z"
+    }
+  ],
+  "activityEvents": [
+    {
+      "id": "activity-1",
+      "entityType": "lead",
+      "entityId": "lead-aurora",
+      "eventType": "lead.status_changed",
+      "description": "Lead moved to Qualified after operations discovery call.",
+      "actorId": "user-rep",
+      "createdAt": "2026-03-29T10:10:00.000Z"
+    },
+    {
+      "id": "activity-2",
+      "entityType": "deal",
+      "entityId": "deal-summit-expansion",
+      "eventType": "deal.stage_changed",
+      "description": "Deal moved to Proposal after rollout estimate was sent.",
+      "actorId": "user-founder",
+      "createdAt": "2026-03-28T16:00:00.000Z"
+    },
+    {
+      "id": "activity-3",
+      "entityType": "task",
+      "entityId": "task-followup-maya",
+      "eventType": "task.created",
+      "description": "Follow-up task created for qualification close plan.",
+      "actorId": "user-rep",
+      "createdAt": "2026-03-30T16:30:00.000Z"
+    }
+  ],
+  "savedViews": [
+    {
+      "id": "view-my-open-leads",
+      "name": "My Open Leads",
+      "entityType": "lead",
+      "ownerId": "user-rep",
+      "filters": { "owner": "user-rep", "status": "New|Attempting Contact|Qualified" },
+      "isShared": false
+    },
+    {
+      "id": "view-high-value-opportunities",
+      "name": "High Value Opportunities",
+      "entityType": "deal",
+      "ownerId": null,
+      "filters": { "stage": "Proposal|Negotiation", "minValue": "20000" },
+      "isShared": true
+    }
+  ],
+  "settings": {
+    "pipelineStages": ["Discovery", "Qualified Opportunity", "Demo", "Proposal", "Negotiation", "Won", "Lost"],
+    "leadSources": ["Founder Referral", "Inbound Demo", "Outbound", "Partner", "Event"],
+    "tags": ["high-fit", "ops", "finance", "enterprise", "manufacturing", "expansion"]
+  }
+}
